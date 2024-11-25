@@ -55,26 +55,4 @@ Model CNN yang dirancang mampu melakukan klasifikasi gambar bunga dengan komplek
 
 ---
 
-## Cara Menjalankan Proyek
 
-1. Clone repository ini:
-   ```bash
-   git clone https://github.com/username/Tugas-2-Kecerdasan-Artifisial-NPM.git
-   ```
-
-2. Instal dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Jalankan proses pelatihan:
-   ```bash
-   python source_code/train_model.py
-   ```
-
-4. Evaluasi model:
-   ```bash
-   python source_code/evaluate_model.py
-   ```
-
----
