@@ -37,7 +37,7 @@ Jaringan Saraf Tiruan (JST) adalah salah satu teknik utama dalam kecerdasan buat
    - 3 Hidden Layer Conv2D
    - 3 Hidden Layer BatchNormalization
    - 1 Dense Layer
-   - Total Trainable Parameters: **9,565,189**
+   - Total Trainable Parameters: **319,717**
 
 3. **Proses Training**
    - Optimizer: Adam
