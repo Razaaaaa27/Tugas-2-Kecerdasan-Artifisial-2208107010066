@@ -9,13 +9,12 @@ from tensorflow.keras.mixed_precision import set_global_policy
 import datetime
 import os
 
-# Aktifkan Mixed Precision untuk menghemat memori
 set_global_policy('mixed_float16')
 
 # Path dataset
-data_dir = r"C:\Python\TugasAI-JST-Tenserflow\flowers"  # Ganti dengan path dataset Anda
-img_height, img_width = 64, 64  # Ukuran gambar lebih kecil
-batch_size = 8  # Kurangi batch size untuk menghindari OOM
+data_dir = r"C:\Python\TugasAI-JST-Tenserflow\flowers"  
+img_height, img_width = 64, 64  
+batch_size = 8  
 
 # Augmentasi Data
 train_datagen = ImageDataGenerator(
@@ -61,7 +60,7 @@ def create_model(num_classes):
         Flatten(),
         Dense(128, activation='relu'),
         Dropout(0.5),
-        Dense(num_classes, activation='softmax', dtype='float32')  # Keluarkan dari mixed precision
+        Dense(num_classes, activation='softmax', dtype='float32')  
     ])
     return model
 
@@ -73,7 +72,7 @@ model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=0.0001),
 
 # Callback
 log_dir = os.path.join("logs", "fit", datetime.datetime.now().strftime("%Y%m%d-%H%M%S"))
-tensorboard_callback = TensorBoard(log_dir=log_dir, histogram_freq=0)  # Nonaktifkan histogram
+tensorboard_callback = TensorBoard(log_dir=log_dir, histogram_freq=0)  
 early_stopping = EarlyStopping(monitor='val_loss', patience=5, restore_best_weights=True)
 reduce_lr = ReduceLROnPlateau(monitor='val_loss', factor=0.2, patience=3, min_lr=1e-6)
 
@@ -112,4 +111,3 @@ plt.close()
 
 # Display Model Summary
 model.summary()
-
