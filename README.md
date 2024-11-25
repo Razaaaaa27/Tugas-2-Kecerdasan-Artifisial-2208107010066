@@ -36,10 +36,7 @@ Jaringan Saraf Tiruan (JST) adalah salah satu teknik utama dalam kecerdasan buat
 2. **Proses Training**
    - Optimizer: Adam
    - Fungsi Aktivasi: ReLU (hidden layers), Softmax (output layer)
-   - Plot proses training disimpan di `results/training_plot.png`.
-
-3. **Evaluasi**
-   - Akurasi model dicatat dengan TensorBoard dan hasil evaluasi model disimpan di `results/accuracy_screenshot.png`.
+   - Plot proses training disimpan di `optimized_training_performance_plot`.
 
 ---
 
