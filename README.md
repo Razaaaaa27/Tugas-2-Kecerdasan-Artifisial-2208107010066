@@ -33,18 +33,12 @@ Jaringan Saraf Tiruan (JST) adalah salah satu teknik utama dalam kecerdasan buat
    - Dimensi Gambar: 150x150x3 piksel
    - Total Kelas: 5 kelas (Daisy, Dandelion, Rose, Sunflower, Tulip)
 
-2. **Arsitektur Model CNN**
-   - 3 Hidden Layer Conv2D
-   - 3 Hidden Layer BatchNormalization
-   - 1 Dense Layer
-   - Total Trainable Parameters: **319,717**
-
-3. **Proses Training**
+2. **Proses Training**
    - Optimizer: Adam
    - Fungsi Aktivasi: ReLU (hidden layers), Softmax (output layer)
    - Plot proses training disimpan di `results/training_plot.png`.
 
-4. **Evaluasi**
+3. **Evaluasi**
    - Akurasi model dicatat dengan TensorBoard dan hasil evaluasi model disimpan di `results/accuracy_screenshot.png`.
 
 ---
