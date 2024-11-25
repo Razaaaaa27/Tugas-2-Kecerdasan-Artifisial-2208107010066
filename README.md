@@ -49,13 +49,13 @@ Jaringan Saraf Tiruan (JST) adalah salah satu teknik utama dalam kecerdasan buat
 
 ---
 
-## 📈 Hasil dan Kesimpulan
+## Hasil dan Kesimpulan
 
 Model CNN yang dirancang mampu melakukan klasifikasi gambar bunga dengan kompleksitas parameter yang cukup untuk mempelajari pola data. Hasilnya mencerminkan potensi JST sebagai alat yang efektif dalam menangani masalah klasifikasi gambar berbasis data non-linear.
 
 ---
 
-## 🖥️ Cara Menjalankan Proyek
+## Cara Menjalankan Proyek
 
 1. Clone repository ini:
    ```bash
